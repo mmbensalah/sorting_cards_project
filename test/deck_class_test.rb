@@ -13,12 +13,10 @@ class DeckTest < Minitest::Test
   end
 
   # def test_cards
-  #
   #   card_1 = Card.new("Ace", "Spade")
   #   card_2 = Card.new("1", "Spade")
   #   deck = Deck.new([card_1, card_2])
-  #   assert_equal [card_1, card_2], deck
-  #   # binding.pry
+  #   assert_equal deck, deck
   # end
 
   def test_count
