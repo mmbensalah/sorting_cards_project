@@ -1,4 +1,3 @@
-require "pry"
 require "./lib/sorting_cards"
 require "./lib/deck_class"
 require "./lib/guess_class"
@@ -105,5 +104,4 @@ class RoundTest < Minitest::Test
     round.record_guess({value: "3", suit: "Hearts"})
     assert_equal 100, round.percent_correct
   end
-
 end

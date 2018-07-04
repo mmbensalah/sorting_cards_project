@@ -1,4 +1,3 @@
-require "pry"
 require "./lib/guess_class"
 require "./lib/sorting_cards"
 require "minitest/autorun"
