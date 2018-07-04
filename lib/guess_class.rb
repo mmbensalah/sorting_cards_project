@@ -1,3 +1,4 @@
+require "./lib/sorting_cards"
 class Guess
   attr_reader :response, :card
   def initialize(response, card)
@@ -20,4 +21,7 @@ class Guess
       "Incorrect!"
     end
   end
+
+
+
 end
