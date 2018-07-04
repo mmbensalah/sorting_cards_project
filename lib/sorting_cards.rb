@@ -1,18 +1,18 @@
 require 'pry'
+
 class Card
-  attr_reader :value, :suit, :total_value, #:worth
+  attr_reader :value, :suit
+
   def initialize(value, suit)
     @value = value
     @suit = suit
-    # @worth = worth
-    @total_value = total_value
   end
 
   def put_together
     "#{@value} of #{@suit}"
   end
 
-  def assign_worth
+  def total_value
     worth = {
       "2" => 2,
       "3" => 3,
@@ -32,10 +32,6 @@ class Card
       "Hearts" => 0.75,
       "Spades" => 0.90
     }
-    @total_value = worth[@value] + worth[@suit]
-
-    # return @total_value
-    # puts @worth.keys
-
+    total_value = worth[@value] + worth[@suit]
   end
 end

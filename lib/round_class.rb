@@ -1,6 +1,4 @@
-
 require "./lib/deck_class"
-require 'pry'
 
 class Round
 attr_reader :deck , :guesses, :hash_to_string
@@ -42,7 +40,6 @@ attr_reader :deck , :guesses, :hash_to_string
 
   def percent_correct
     @number_correct.count.to_f / @guesses.count.to_f * 100
-    # binding.pry
   end
 
 end
